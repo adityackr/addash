@@ -2,7 +2,7 @@
 
 addash is a library like lodash. I am creating the library on my way. Anyone can use this library. I will try to create all the features as lodash does. Brief description of all features are given below:
 
-**chunk(arr, size)**
+**chunk(arr, size)**  
 Split an array into groups the length of size. Remaining elements are stored in a new array.
 
 - arguments: arr(Array), size(number)
@@ -18,7 +18,7 @@ chunk(['a', 'b', 'c', 'd'], -5); // []
 chunk([], 3); // []
 ```
 
-**compact(arr)**
+**compact(arr)**  
 Filter an array with only truthy values.
 
 - arguments: arr(Array)
