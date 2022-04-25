@@ -1,12 +1,17 @@
-function chunk(arr, size = 1) {
-	let firstEl = [];
-	let lastEl = [];
-	let newArr = [firstEl, lastEl];
+const chunk = function (arr, size = 1) {
+	this.firstEl = [];
+	this.lastEl = [];
+	this.newArr = [firstEl, lastEl];
+	if (arr.length === 0 || size >= arr.length || size < 1) {
+		return [];
+	}
 	for (let i = 0; i < size; i++) {
-		firstEl.push(arr[i]);
+		this.firstEl.push(arr[i]);
 	}
 	for (let i = size; i < arr.length; i++) {
-		lastEl.push(arr[i]);
+		this.lastEl.push(arr[i]);
 	}
-	return newArr;
-}
+	return this.newArr;
+};
+
+module.exports = chunk;
