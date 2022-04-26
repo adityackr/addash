@@ -1,3 +1,9 @@
+/**
+ * @param {Array}
+ * @param {number}
+ * @returns {Array}
+ */
+
 function chunk(arr, size = 1) {
 	this.firstEl = [];
 	this.lastEl = [];
