@@ -30,3 +30,17 @@ Example:
 compact([0, 1, false, 2, '', 3]); // [1, 2, 3]
 compact([0, 1, true, 'text', null, undefined, NaN, false, 2, '', 3]); // [1, true, 'text', 2, 3]
 ```
+
+=> **concat(arr, ...values)**  
+Creates an array by concatenating with more arrays or values.
+
+- arguments: arr(Array, ...values)
+- returns: Array
+
+Example:
+
+```js
+concat([1], 2, [3], [[4]]); // [1, 2, 3, [4]]
+concat(1, 2, [3], [[4]]); // []
+concat(); // []
+```
