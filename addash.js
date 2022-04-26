@@ -26,13 +26,32 @@ function chunk(arr, size = 1) {
  */
 
 function compact(arr) {
-	let newArr = [];
+	this.newArr = [];
 	for (let i = 0; i < arr.length; i++) {
 		if (arr[i]) {
-			newArr.push(arr[i]);
+			this.newArr.push(arr[i]);
 		}
 	}
-	return newArr;
+	return this.newArr;
 }
 
-module.exports = { chunk, compact };
+/**
+ * @param {Array, ...*}
+ * @returns {Array}
+ */
+function concat() {
+	this.newArr = [];
+	for (let i = 0; i < arguments.length; i++) {
+		if (Array.isArray(arguments[i])) {
+			for (let j = 0; j < arguments[i].length; j++) {
+				this.newArr.push(arguments[i][j]);
+			}
+		} else {
+			this.newArr.push(arguments[i]);
+		}
+	}
+
+	return this.newArr;
+}
+
+module.exports = { chunk, compact, concat };
