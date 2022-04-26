@@ -44,3 +44,15 @@ concat([1], 2, [3], [[4]]); // [1, 2, 3, [4]]
 concat(1, 2, [3], [[4]]); // []
 concat(); // []
 ```
+
+=> **difference(arr, [values])**  
+Creates an array by concatenating with more arrays or values.
+
+- arguments: arr(Array, [values])
+- returns: Array
+
+Example:
+
+```js
+difference([2, 1], [2, 3]); // [1]
+```
