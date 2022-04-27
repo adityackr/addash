@@ -56,3 +56,18 @@ Example:
 ```js
 difference([2, 1], [2, 3]); // [1]
 ```
+
+=> **drop(arr, n=1)**  
+Creates a slice of array with n elements dropped from the beginning.
+
+- arguments: arr(Array, n=1)
+- returns: Array
+
+Example:
+
+```js
+drop([1, 2, 3]); // [2, 3]
+drop([1, 2, 3], 2); // [2,3]
+drop([1, 2, 3], 5); // []
+drop([1, 2, 3], 0); // [1, 2, 3]
+```
