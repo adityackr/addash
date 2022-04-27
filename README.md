@@ -71,3 +71,18 @@ drop([1, 2, 3], 2); // [2,3]
 drop([1, 2, 3], 5); // []
 drop([1, 2, 3], 0); // [1, 2, 3]
 ```
+
+=> **dropRight(arr, n=1)**  
+Creates a slice of array with n elements dropped from the end.
+
+- arguments: arr(Array, n=1)
+- returns: Array
+
+Example:
+
+```js
+dropRight([1, 2, 3]); // [1, 2]
+dropRight([1, 2, 3], 2); // [1]
+dropRight([1, 2, 3], 5); // []
+dropRight([1, 2, 3], 0); // [1, 2, 3]
+```

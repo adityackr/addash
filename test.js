@@ -1,4 +1,11 @@
-const { chunk, compact, concat, difference, drop } = require('./addash');
+const {
+	chunk,
+	compact,
+	concat,
+	difference,
+	drop,
+	dropRight,
+} = require('./addash');
 
 /* * chunk */
 /* console.log('----- chunk -----');
@@ -27,8 +34,15 @@ console.log(difference([2, 1], [2, 3])); */
 
 /* * drop */
 // const drop = require('./array/drop.js');
-console.log('----- drop -----');
+/* console.log('----- drop -----');
 console.log(drop([1, 2, 3]));
 console.log(drop([1, 2, 3], 2));
 console.log(drop([1, 2, 3], 5));
-console.log(drop([1, 2, 3], 0));
+console.log(drop([1, 2, 3], 0)); */
+
+/* * dropRight */
+console.log('----- dropRight -----');
+console.log(dropRight([1, 2, 3]));
+console.log(dropRight([1, 2, 3], 2));
+console.log(dropRight([1, 2, 3], 5));
+console.log(dropRight([1, 2, 3], 0));
