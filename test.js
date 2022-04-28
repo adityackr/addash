@@ -5,6 +5,7 @@ const {
 	difference,
 	drop,
 	dropRight,
+	fill,
 } = require('./addash');
 
 /* * chunk */
@@ -41,8 +42,15 @@ console.log(drop([1, 2, 3], 5));
 console.log(drop([1, 2, 3], 0)); */
 
 /* * dropRight */
-console.log('----- dropRight -----');
+/* console.log('----- dropRight -----');
 console.log(dropRight([1, 2, 3]));
 console.log(dropRight([1, 2, 3], 2));
 console.log(dropRight([1, 2, 3], 5));
-console.log(dropRight([1, 2, 3], 0));
+console.log(dropRight([1, 2, 3], 0)); */
+
+/* * fill */
+console.log('----- fill -----');
+const arr = [1, 2, 3];
+console.log(fill(arr, 'a'));
+console.log(fill(Array(3), 2));
+console.log(fill([4, 6, 8, 10], '*', 1, 3));

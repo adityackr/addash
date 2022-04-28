@@ -34,7 +34,7 @@ compact([0, 1, true, 'text', null, undefined, NaN, false, 2, '', 3]); // [1, tru
 => **concat(arr, ...values)**  
 Creates an array by concatenating with more arrays or values.
 
-- arguments: arr(Array, ...values)
+- arguments: arr(Array), ...values(Array)
 - returns: Array
 
 Example:
@@ -48,7 +48,7 @@ concat(); // []
 => **difference(arr, [values])**  
 Creates an array by concatenating with more arrays or values.
 
-- arguments: arr(Array, [values])
+- arguments: arr(Array), [values (Array)]
 - returns: Array
 
 Example:
@@ -60,7 +60,7 @@ difference([2, 1], [2, 3]); // [1]
 => **drop(arr, n=1)**  
 Creates a slice of array with n elements dropped from the beginning.
 
-- arguments: arr(Array, n=1)
+- arguments: arr(Array), n=1(number)
 - returns: Array
 
 Example:
@@ -85,4 +85,19 @@ dropRight([1, 2, 3]); // [1, 2]
 dropRight([1, 2, 3], 2); // [1]
 dropRight([1, 2, 3], 5); // []
 dropRight([1, 2, 3], 0); // [1, 2, 3]
+```
+
+=> **fill(arr, value, start=0, end=arr.length)**  
+Fills elements of array with value from start up to, but not including end.
+
+- arguments: arr(Array), value(any), start=0(number), end=arr.length(number)
+- returns: Array
+
+Example:
+
+```js
+const arr = [1, 2, 3];
+fill(arr, 'a'); // ['a', 'a', 'a']
+fill(Array(3), 2); // [2, 2, 2]
+fill([4, 6, 8, 10], '*', 1, 3); // [4, '*', '*', 10]
 ```
