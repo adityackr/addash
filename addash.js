@@ -118,4 +118,22 @@ function fill(arr, value, start = 0, end = arr.length) {
 	return this.newArr;
 }
 
-module.exports = { chunk, compact, concat, difference, drop, dropRight, fill };
+/**
+ * @param {Array}
+ * @returns {any}
+ */
+
+function head(arr) {
+	return arr[0];
+}
+
+module.exports = {
+	chunk,
+	compact,
+	concat,
+	difference,
+	drop,
+	dropRight,
+	fill,
+	head,
+};

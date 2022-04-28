@@ -101,3 +101,17 @@ fill(arr, 'a'); // ['a', 'a', 'a']
 fill(Array(3), 2); // [2, 2, 2]
 fill([4, 6, 8, 10], '*', 1, 3); // [4, '*', '*', 10]
 ```
+
+=> **head(arr)**  
+returns the first element of the array
+
+- arguments: arr(Array)
+- returns: first element of the array
+
+Example:
+
+```js
+head([1, 2, 3]); // [1]
+head(['a', 'b', 'c']); // ['a']
+head([]); // undefined
+```
