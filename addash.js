@@ -4,21 +4,35 @@
  * @returns {Array}
  */
 
-function chunk(arr, size = 1) {
-	this.firstEl = [];
-	this.lastEl = [];
-	this.newArr = [firstEl, lastEl];
-	if (arr.length === 0 || size >= arr.length || size < 1) {
-		return [];
-	}
-	for (let i = 0; i < size; i++) {
-		this.firstEl.push(arr[i]);
-	}
-	for (let i = size; i < arr.length; i++) {
-		this.lastEl.push(arr[i]);
-	}
-	return this.newArr;
-}
+const chunk = (arr, size = 1) => {
+    if(size === 1) {
+        return arr.map((value) => [value])
+    }
+    if(size <= 0) {
+        return [];
+    };
+    if(size >= arr.length) {
+        return [arr]
+    }
+    let arrayToBeReturned = [];
+    let index = 0;
+    let temp = size;
+    while(index < arr.length) {
+       let tempArray = [];
+
+       for(index; index < size; index++) {
+          tempArray.push(arr[index]);
+          if(arr.length - 1 === index) {
+              arrayToBeReturned.push(tempArray)
+              return arrayToBeReturned
+          }
+       };
+
+       arrayToBeReturned.push(tempArray);
+       size += temp;
+    }
+    return arrayToBeReturned
+};
 
 /**
  * @param {Array}
