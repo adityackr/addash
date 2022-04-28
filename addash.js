@@ -152,6 +152,19 @@ function flattenDeep(arr) {
 
 /**
  * @param {Array}
+ * @returns {Array}
+ */
+
+function flattenDepth(arr, depth = 1) {
+	this.newArr = [...arr];
+	for (let i = 0; i < depth; i++) {
+		flatten(this.newArr);
+	}
+	return this.newArr;
+}
+
+/**
+ * @param {Array}
  * @returns {any}
  */
 
@@ -169,5 +182,6 @@ module.exports = {
 	fill,
 	flatten,
 	flattenDeep,
+	flattenDepth,
 	head,
 };

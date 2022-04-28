@@ -126,6 +126,21 @@ Example:
 flattenDeep([1, [2, [3, [4]], 5]]); // [1, 2, 3, 4, 5]
 ```
 
+=> **flattenDepth(arr, depth=1)**  
+Recursively flatten array up to depth times.
+
+- arguments: arr(Array), depth=1(number)
+- returns: Array
+
+Example:
+
+```js
+flattenDepth([1, [2, [3, [4]], 5]]); // [ 1, 2, [ 3, [ 4 ] ], 5 ]
+flattenDepth([1, [2, [3, [4]], 5]], 2); // [ 1, 2, 3, [ 4 ], 5 ]
+flattenDepth([1, [2, [3, [4]], 5]], 3); // [ 1, 2, 3, 4, 5 ]
+flattenDepth([1, [2, [3, [4]], 5]], 4); // [ 1, 2, 3, 4, 5 ]
+```
+
 => **head(arr)**  
 returns the first element of the array
 
