@@ -102,6 +102,18 @@ fill(Array(3), 2); // [2, 2, 2]
 fill([4, 6, 8, 10], '*', 1, 3); // [4, '*', '*', 10]
 ```
 
+=> **flatten(arr)**  
+Flattens array a single level deep.
+
+- arguments: arr(Array)
+- returns: Array
+
+Example:
+
+```js
+flatten([1, [2, [3, [4]], 5]]); // [1, 2, [3, [4]], 5]
+```
+
 => **head(arr)**  
 returns the first element of the array
 
