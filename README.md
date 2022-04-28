@@ -169,3 +169,18 @@ head([1, 2, 3]); // [1]
 head(['a', 'b', 'c']); // ['a']
 head([]); // undefined
 ```
+
+=> **indexOf(arr, value, fromIndex=0)**  
+returns the index number of the value
+
+- arguments: arr(Array), value(any), fromIndex=0(number)
+- returns: index number of the value
+
+Example:
+
+```js
+indexOf([1, 2, 1, 2], 2); // 1
+indexOf([1, 2, 1, 2], 2, 2); // 3
+indexOf([1, 2, 1, 2], 2, -1); // 3
+indexOf([1, 2, 1, 2], 3); // -1
+```
