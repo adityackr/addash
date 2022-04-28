@@ -165,6 +165,19 @@ function flattenDepth(arr, depth = 1) {
 
 /**
  * @param {Array}
+ * @returns {Object}
+ */
+
+function fromPairs(pairs) {
+	this.obj = {};
+	for (let i = 0; i < pairs.length; i++) {
+		this.obj[pairs[i][0]] = pairs[i][1];
+	}
+	return this.obj;
+}
+
+/**
+ * @param {Array}
  * @returns {any}
  */
 
@@ -183,5 +196,6 @@ module.exports = {
 	flatten,
 	flattenDeep,
 	flattenDepth,
+	fromPairs,
 	head,
 };

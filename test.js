@@ -10,6 +10,7 @@ const {
 	flatten,
 	flattenDeep,
 	flattenDepth,
+	fromPairs,
 } = require('./addash');
 
 /* * chunk */
@@ -66,10 +67,18 @@ console.log(fill([4, 6, 8, 10], '*', 1, 3)); */
 /* console.log(flattenDeep([1, [2, [3, [4]], 5]])); */
 
 /* * flattenDepth */
-console.log(flattenDepth([1, [2, [3, [4]], 5]]));
+/* console.log(flattenDepth([1, [2, [3, [4]], 5]]));
 console.log(flattenDepth([1, [2, [3, [4]], 5]], 2));
 console.log(flattenDepth([1, [2, [3, [4]], 5]], 3));
-console.log(flattenDepth([1, [2, [3, [4]], 5]], 4));
+console.log(flattenDepth([1, [2, [3, [4]], 5]], 4)); */
+
+/* * fromPairs */
+console.log(
+	fromPairs([
+		['a', 1],
+		['b', 2],
+	])
+);
 
 /* * head */
 /* console.log('----- head -----');

@@ -141,6 +141,21 @@ flattenDepth([1, [2, [3, [4]], 5]], 3); // [ 1, 2, 3, 4, 5 ]
 flattenDepth([1, [2, [3, [4]], 5]], 4); // [ 1, 2, 3, 4, 5 ]
 ```
 
+=> **fromPairs(pairs)**  
+Returns an object composed from key-value pairs.
+
+- arguments: pairs(Array)
+- returns: Object
+
+Example:
+
+```js
+fromPairs([
+	['a', 1],
+	['b', 2],
+]); // { a: 1, b: 2}
+```
+
 => **head(arr)**  
 returns the first element of the array
 
