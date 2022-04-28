@@ -184,3 +184,15 @@ indexOf([1, 2, 1, 2], 2, 2); // 3
 indexOf([1, 2, 1, 2], 2, -1); // 3
 indexOf([1, 2, 1, 2], 3); // -1
 ```
+
+=> **initial(arr)**  
+get all but the last element of the array
+
+- arguments: arr(Array)
+- returns: Array of the all element but the last.
+
+Example:
+
+```js
+initial([1, 2, 3]); // [1, 2]
+```
