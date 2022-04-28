@@ -8,6 +8,7 @@ const {
 	fill,
 	head,
 	flatten,
+	flattenDeep,
 } = require('./addash');
 
 /* * chunk */
@@ -58,7 +59,10 @@ console.log(fill(Array(3), 2));
 console.log(fill([4, 6, 8, 10], '*', 1, 3)); */
 
 /* * flatten */
-console.log(flatten([1, [2, [3, [4]], 5]]));
+/* console.log(flatten([1, [2, [3, [4]], 5]])); */
+
+/* * flattenDeep */
+console.log(flattenDeep([1, [2, [3, [4]], 5]]));
 
 /* * head */
 /* console.log('----- head -----');

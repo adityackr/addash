@@ -114,6 +114,18 @@ Example:
 flatten([1, [2, [3, [4]], 5]]); // [1, 2, [3, [4]], 5]
 ```
 
+=> **flattenDeep(arr)**  
+Recursively flattens array.
+
+- arguments: arr(Array)
+- returns: Array
+
+Example:
+
+```js
+flattenDeep([1, [2, [3, [4]], 5]]); // [1, 2, 3, 4, 5]
+```
+
 => **head(arr)**  
 returns the first element of the array
 
