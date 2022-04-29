@@ -209,3 +209,15 @@ Example:
 join(['a', 'b', 'c']); // a, b, c
 join(['a', 'b', 'c'], '~'); // a~b~c
 ```
+
+=> **last(arr)**  
+Returns the last element of the array.
+
+- arguments: arr(Array)
+- returns: (any) the last element of the array
+
+Example:
+
+```js
+last([1, 2, 3]); // 3
+```

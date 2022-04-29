@@ -236,6 +236,15 @@ function join(arr, separator = ', ') {
 	return str;
 }
 
+/**
+ * @param {Array} arr
+ * @returns {any} last element of the array
+ */
+
+function last(arr) {
+	return arr[arr.length - 1];
+}
+
 module.exports = {
 	chunk,
 	compact,
@@ -252,4 +261,5 @@ module.exports = {
 	indexOf,
 	initial,
 	join,
+	last,
 };
