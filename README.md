@@ -196,3 +196,16 @@ Example:
 ```js
 initial([1, 2, 3]); // [1, 2]
 ```
+
+=> **join(arr, separator=', ')**  
+Converts all elements in array into a string separated by `separator`.
+
+- arguments: arr(Array), separator=', '(string)
+- returns: (string) Returns the joined string
+
+Example:
+
+```js
+join(['a', 'b', 'c']); // a, b, c
+join(['a', 'b', 'c'], '~'); // a~b~c
+```

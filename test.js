@@ -13,6 +13,7 @@ const {
 	fromPairs,
 	indexOf,
 	initial,
+	join,
 } = require('./addash');
 
 /* * chunk */
@@ -96,4 +97,8 @@ console.log(indexOf([1, 2, 1, 2], 2, -1));
 console.log(indexOf([1, 2, 1, 2], 3)); */
 
 /* * initial */
-console.log(initial([1, 2, 3]));
+/* console.log(initial([1, 2, 3])); */
+
+/* * join */
+console.log(join(['a', 'b', 'c']));
+console.log(join(['a', 'b', 'c'], '~'));
