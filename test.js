@@ -15,6 +15,7 @@ const {
 	initial,
 	join,
 	last,
+	lastIndexOf,
 } = require('./addash');
 
 /* * chunk */
@@ -105,4 +106,9 @@ console.log(indexOf([1, 2, 1, 2], 3)); */
 console.log(join(['a', 'b', 'c'], '~')); */
 
 /* * last */
-console.log(last([1, 2, 3]));
+/* console.log(last([1, 2, 3])); */
+
+/* * lastIndexOf */
+console.log(lastIndexOf([1, 2, 1, 2], 2));
+console.log(lastIndexOf([1, 2, 1, 2], 2, 2));
+console.log(lastIndexOf([1, 2, 1, 2], 3));

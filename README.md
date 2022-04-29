@@ -221,3 +221,17 @@ Example:
 ```js
 last([1, 2, 3]); // 3
 ```
+
+=> **lastIndexOf(arr, value, fromIndex=arr.length-1)**  
+This method is like `indexOf` except that it iterates over elements of array from right to left.
+
+- arguments: arr(Array), value(any), fromIndex=arr.length-1(number)
+- returns: (number) Returns the index of the matched value, else -1.
+
+Example:
+
+```js
+lastIndexOf([1, 2, 1, 2], 2); // 3
+lastIndexOf([1, 2, 1, 2], 2, 2); // 1
+lastIndexOf([1, 2, 1, 2], 3); // -1
+```
