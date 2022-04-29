@@ -274,3 +274,20 @@ Example:
 const array = ['a', 'b', 'c', 'a', 'b', 'c'];
 console.log(pull(array, ['a', 'c'])); // [b, b]
 ```
+
+=> **pullAt(arr, indexes)**  
+Removes elements from array corresponding to indexes and returns an array of removed elements.
+
+**N.B.:**
+This method mutates array
+
+- arguments: arr(Array), indexes(Array)
+- returns: (Array) Returns the new array of removed elements.
+
+Example:
+
+```js
+const array = ['a', 'b', 'c', 'd'];
+console.log(pullAt(array, [1, 3])); // [b, d]
+console.log(array); // [a, c]
+```
