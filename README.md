@@ -261,3 +261,16 @@ Example:
 const array = ['a', 'b', 'c', 'a', 'b', 'c'];
 console.log(pull(array, 'a', 'c')); // [b, b]
 ```
+
+=> **pullAll(arr, values)**  
+This method is like pull except that it accepts an array of values to remove.
+
+- arguments: arr(Array), values(Array)
+- returns: (Array) Removes all given values from array
+
+Example:
+
+```js
+const array = ['a', 'b', 'c', 'a', 'b', 'c'];
+console.log(pull(array, ['a', 'c'])); // [b, b]
+```

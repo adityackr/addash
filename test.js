@@ -18,6 +18,7 @@ const {
 	lastIndexOf,
 	nth,
 	pull,
+	pullAll,
 } = require('./addash');
 
 /* * chunk */
@@ -120,5 +121,9 @@ console.log(lastIndexOf([1, 2, 1, 2], 3)); */
 console.log(nth(['a', 'b', 'c', 'd'], -2)); */
 
 /* * pull */
+/* const array = ['a', 'b', 'c', 'a', 'b', 'c'];
+console.log(pull(array, 'a', 'c')); */
+
+/* * pullAll */
 const array = ['a', 'b', 'c', 'a', 'b', 'c'];
-console.log(pull(array, 'a', 'c'));
+console.log(pullAll(array, ['a', 'c']));
