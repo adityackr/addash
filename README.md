@@ -248,3 +248,16 @@ Example:
 nth(['a', 'b', 'c', 'd'], 1); // b
 nth(['a', 'b', 'c', 'd'], -2); // c
 ```
+
+=> **pull(arr, ...values)**  
+Removes all given values from array
+
+- arguments: arr(Array), ...values(any)
+- returns: (Array) Removes all given values from array
+
+Example:
+
+```js
+const array = ['a', 'b', 'c', 'a', 'b', 'c'];
+console.log(pull(array, 'a', 'c')); // [b, b]
+```
