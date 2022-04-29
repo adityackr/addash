@@ -263,6 +263,16 @@ function lastIndexOf(arr, value, fromIndex = arr.length - 1) {
 	return index;
 }
 
+/**
+ * @param {Array} arr
+ * @param {number} n
+ * @returns {any}
+ */
+
+function nth(arr, n = 0) {
+	return n >= 0 ? arr[n] : arr[n + arr.length];
+}
+
 module.exports = {
 	chunk,
 	compact,
@@ -281,4 +291,5 @@ module.exports = {
 	join,
 	last,
 	lastIndexOf,
+	nth,
 };

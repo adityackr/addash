@@ -235,3 +235,16 @@ lastIndexOf([1, 2, 1, 2], 2); // 3
 lastIndexOf([1, 2, 1, 2], 2, 2); // 1
 lastIndexOf([1, 2, 1, 2], 3); // -1
 ```
+
+=> **nth(arr, n=0)**  
+Gets the element at index n of array. If n is negative, the nth element from the end is returned.
+
+- arguments: arr(Array), n=0(number)
+- returns: (any) Returns the nth element of array.
+
+Example:
+
+```js
+nth(['a', 'b', 'c', 'd'], 1); // b
+nth(['a', 'b', 'c', 'd'], -2); // c
+```
