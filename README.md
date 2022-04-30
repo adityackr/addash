@@ -373,3 +373,15 @@ console.log(sortedLastIndex([4, 5, 5, 5, 6], 4)); // 1
 console.log(sortedLastIndex([4, 5, 5, 5, 6], 6)); // 5
 console.log(sortedLastIndex([4, 5, 5, 5, 6], 7)); // 5
 ```
+
+=> **sortedLastIndexOf(arr, value)**  
+Returns the last index of the matched value, else -1.
+
+- arguments: arr(Array), value(any)
+- returns: (number) Returns the last index of the matched value, else -1.
+
+Example:
+
+```js
+console.log(sortedLastIndexOf([4, 5, 5, 5, 6], 5)); // 3
+```
