@@ -291,3 +291,23 @@ const array = ['a', 'b', 'c', 'd'];
 console.log(pullAt(array, [1, 3])); // [b, d]
 console.log(array); // [a, c]
 ```
+
+=> **reverse(arr)**  
+Reverses array so that the first element becomes the last, the second element becomes the second to last, and so on.
+
+**N.B.:**
+This method mutates array
+
+- arguments: arr(Array)
+- returns: (Array) Returns array
+
+Example:
+
+```js
+const array1 = [1, 2, 3];
+const array2 = ['a', 'b', 'c'];
+reverse(array1);
+reverse(array2);
+console.log(array1); // [3, 2, 1]
+console.log(array2); // [c, b, a]
+```
