@@ -325,3 +325,20 @@ console.log(slice([1, 2, 3, 4, 5])); // [1, 2, 3, 4, 5]
 console.log(slice([1, 2, 3, 4, 5], 2)); // [3, 4, 5]
 console.log(slice([1, 2, 3, 4, 5], 2, 4)); // [3, 4]
 ```
+
+=> **sortedIndex(arr, value)**  
+determine the lowest index at which value should be inserted into `array` in order to maintain its sort order.
+
+- arguments: arr(Array), value(any)
+- returns: (number) Returns sorted index
+
+Example:
+
+```js
+console.log(sortedIndex([30, 50], 40)); // 1
+console.log(sortedIndex([30, 50], 20)); // 0
+console.log(sortedIndex([30, 50], 60)); // 2
+console.log(sortedIndex([30, 50], 30)); // 0
+console.log(sortedIndex(['a', 'c'], 'b')); // 1
+console.log(sortedIndex(['a', 'c'], 'd')); // 2
+```

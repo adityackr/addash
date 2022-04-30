@@ -22,6 +22,7 @@ const {
 	pullAt,
 	reverse,
 	slice,
+	sortedIndex,
 } = require('./addash');
 
 /* * chunk */
@@ -145,6 +146,14 @@ console.log(array1);
 console.log(array2); */
 
 /* * slice */
-console.log(slice([1, 2, 3, 4, 5]));
+/* console.log(slice([1, 2, 3, 4, 5]));
 console.log(slice([1, 2, 3, 4, 5], 2));
-console.log(slice([1, 2, 3, 4, 5], 2, 4));
+console.log(slice([1, 2, 3, 4, 5], 2, 4)); */
+
+/* * sortedIndex */
+console.log(sortedIndex([30, 50], 40));
+console.log(sortedIndex([30, 50], 20));
+console.log(sortedIndex([30, 50], 60));
+console.log(sortedIndex([30, 50], 30));
+console.log(sortedIndex(['a', 'c'], 'b'));
+console.log(sortedIndex(['a', 'c'], 'd'));
