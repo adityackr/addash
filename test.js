@@ -24,6 +24,7 @@ const {
 	slice,
 	sortedIndex,
 	sortedIndexOf,
+	sortedLastIndex,
 } = require('./addash');
 
 /* * chunk */
@@ -160,7 +161,14 @@ console.log(sortedIndex(['a', 'c'], 'b'));
 console.log(sortedIndex(['a', 'c'], 'd')); */
 
 /* * sortedIndexOf */
-console.log(sortedIndexOf([4, 5, 5, 5, 6], 4));
+/* console.log(sortedIndexOf([4, 5, 5, 5, 6], 4));
 console.log(sortedIndexOf([4, 5, 5, 5, 6], 5));
 console.log(sortedIndexOf([4, 5, 5, 5, 6], 6));
-console.log(sortedIndexOf([4, 5, 5, 5, 6], 7));
+console.log(sortedIndexOf([4, 5, 5, 5, 6], 7)); */
+
+/* * sortedLastIndex */
+console.log(sortedLastIndex([4, 5, 5, 5, 6], 5));
+console.log(sortedLastIndex([4, 5, 5, 5, 6], 3));
+console.log(sortedLastIndex([4, 5, 5, 5, 6], 4));
+console.log(sortedLastIndex([4, 5, 5, 5, 6], 6));
+console.log(sortedLastIndex([4, 5, 5, 5, 6], 7));

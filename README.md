@@ -357,3 +357,19 @@ console.log(sortedIndexOf([4, 5, 5, 5, 6], 5)); // 1
 console.log(sortedIndexOf([4, 5, 5, 5, 6], 6)); // 4
 console.log(sortedIndexOf([4, 5, 5, 5, 6], 7)); // -1
 ```
+
+=> **sortedLastIndex(arr, value)**  
+This method is like `sortedIndex` except that it returns the highest index at which value should be inserted into array in order to maintain its sort order.
+
+- arguments: arr(Array), value(any)
+- returns: (number) Returns the index at which value should be inserted into array.
+
+Example:
+
+```js
+console.log(sortedLastIndex([4, 5, 5, 5, 6], 5)); // 4
+console.log(sortedLastIndex([4, 5, 5, 5, 6], 3)); // 0
+console.log(sortedLastIndex([4, 5, 5, 5, 6], 4)); // 1
+console.log(sortedLastIndex([4, 5, 5, 5, 6], 6)); // 5
+console.log(sortedLastIndex([4, 5, 5, 5, 6], 7)); // 5
+```
