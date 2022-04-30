@@ -342,3 +342,18 @@ console.log(sortedIndex([30, 50], 30)); // 0
 console.log(sortedIndex(['a', 'c'], 'b')); // 1
 console.log(sortedIndex(['a', 'c'], 'd')); // 2
 ```
+
+=> **sortedIndexOf(arr, value)**  
+Returns the index of the matched value, else -1.
+
+- arguments: arr(Array), value(any)
+- returns: (number) Returns the index of the matched value, else -1.
+
+Example:
+
+```js
+console.log(sortedIndexOf([4, 5, 5, 5, 6], 4)); // 0
+console.log(sortedIndexOf([4, 5, 5, 5, 6], 5)); // 1
+console.log(sortedIndexOf([4, 5, 5, 5, 6], 6)); // 4
+console.log(sortedIndexOf([4, 5, 5, 5, 6], 7)); // -1
+```
