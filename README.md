@@ -311,3 +311,17 @@ reverse(array2);
 console.log(array1); // [3, 2, 1]
 console.log(array2); // [c, b, a]
 ```
+
+=> **slice(arr, start=0, end=arr.length)**  
+Creates a slice of `array` from `start` up to, but not including, `end`.
+
+- arguments: arr(Array), start=0(number), end=arr.length(number)
+- returns: (Array) Returns array
+
+Example:
+
+```js
+console.log(slice([1, 2, 3, 4, 5])); // [1, 2, 3, 4, 5]
+console.log(slice([1, 2, 3, 4, 5], 2)); // [3, 4, 5]
+console.log(slice([1, 2, 3, 4, 5], 2, 4)); // [3, 4]
+```

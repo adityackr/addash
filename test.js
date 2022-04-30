@@ -21,6 +21,7 @@ const {
 	pullAll,
 	pullAt,
 	reverse,
+	slice,
 } = require('./addash');
 
 /* * chunk */
@@ -136,9 +137,14 @@ console.log(pullAt(array, [1, 3]));
 console.log(array); */
 
 /* * reverse */
-const array1 = [1, 2, 3];
+/* const array1 = [1, 2, 3];
 const array2 = ['a', 'b', 'c'];
 reverse(array1);
 reverse(array2);
 console.log(array1);
-console.log(array2);
+console.log(array2); */
+
+/* * slice */
+console.log(slice([1, 2, 3, 4, 5]));
+console.log(slice([1, 2, 3, 4, 5], 2));
+console.log(slice([1, 2, 3, 4, 5], 2, 4));
