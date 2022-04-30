@@ -385,3 +385,15 @@ Example:
 ```js
 console.log(sortedLastIndexOf([4, 5, 5, 5, 6], 5)); // 3
 ```
+
+=> **sortedUniq(arr)**  
+Returns the new duplicate free array.
+
+- arguments: arr(Array)
+- returns: (Array) Returns the new duplicate free array.
+
+Example:
+
+```js
+console.log(sortedUniq([1, 1, 2])); // [1, 2]
+```
