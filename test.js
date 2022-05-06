@@ -27,6 +27,7 @@ const {
 	sortedLastIndex,
 	sortedLastIndexOf,
 	sortedUniq,
+	tail,
 } = require('./addash');
 
 /* * chunk */
@@ -179,4 +180,7 @@ console.log(sortedLastIndex([4, 5, 5, 5, 6], 7)); */
 /* console.log(sortedLastIndexOf([4, 5, 5, 5, 6], 5)); */
 
 /* * sortedUniq */
-console.log(sortedUniq([1, 1, 2]));
+// console.log(sortedUniq([1, 1, 2]));
+
+/* * tail */
+console.log(tail([1, 2, 3]));

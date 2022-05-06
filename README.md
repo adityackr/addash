@@ -397,3 +397,15 @@ Example:
 ```js
 console.log(sortedUniq([1, 1, 2])); // [1, 2]
 ```
+
+=> **tail(arr)**  
+Get all elements except first
+
+- arguments: arr(Array)
+- returns: (Array) Returns the sliced array
+
+Example:
+
+```js
+console.log(tail([1, 2, 3])); // [2, 3]
+```
