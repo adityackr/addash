@@ -409,3 +409,18 @@ Example:
 ```js
 console.log(tail([1, 2, 3])); // [2, 3]
 ```
+
+=> **take(arr, n=1)**  
+Creates a slice of array with n elements taken from the beginning.
+
+- arguments: arr(Array), n=1(Number)
+- returns: (Array) Returns the sliced array
+
+Example:
+
+```js
+console.log(take([1, 2, 3])); // [1]
+console.log(take([1, 2, 3], 2)); // [1, 2]
+console.log(take([1, 2, 3], 5)); // [1, 2, 3]
+console.log(take([1, 2, 3], 0)); // []
+```
