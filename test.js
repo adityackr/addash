@@ -29,6 +29,7 @@ const {
 	sortedUniq,
 	tail,
 	take,
+	takeRight,
 } = require('./addash');
 
 /* * chunk */
@@ -187,7 +188,13 @@ console.log(sortedLastIndex([4, 5, 5, 5, 6], 7)); */
 // console.log(tail([1, 2, 3]));
 
 /* * take */
-console.log(take([1, 2, 3]));
+/* console.log(take([1, 2, 3]));
 console.log(take([1, 2, 3], 2));
 console.log(take([1, 2, 3], 5));
-console.log(take([1, 2, 3], 0));
+console.log(take([1, 2, 3], 0)); */
+
+/* * takeRight */
+console.log(takeRight([1, 2, 3]));
+console.log(takeRight([1, 2, 3], 2));
+console.log(takeRight([1, 2, 3], 5));
+console.log(takeRight([1, 2, 3], 0));

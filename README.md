@@ -424,3 +424,18 @@ console.log(take([1, 2, 3], 2)); // [1, 2]
 console.log(take([1, 2, 3], 5)); // [1, 2, 3]
 console.log(take([1, 2, 3], 0)); // []
 ```
+
+=> **take(arr, n=1)**  
+Creates a slice of array with n elements taken from the end.
+
+- arguments: arr(Array), n=1(Number)
+- returns: (Array) Returns the sliced array
+
+Example:
+
+```js
+console.log(takeRight([1, 2, 3])); // [3]
+console.log(takeRight([1, 2, 3], 2)); // [2, 3]
+console.log(takeRight([1, 2, 3], 5)); // [1, 2, 3]
+console.log(takeRight([1, 2, 3], 0)); // []
+```
