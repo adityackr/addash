@@ -439,3 +439,15 @@ console.log(takeRight([1, 2, 3], 2)); // [2, 3]
 console.log(takeRight([1, 2, 3], 5)); // [1, 2, 3]
 console.log(takeRight([1, 2, 3], 0)); // []
 ```
+
+=> **union(...arrays)**
+Creates an array of unique values.
+
+- arguments: ...arrays(Array)
+- returns: (Array) Returns the new array of combined values
+
+Example:
+
+```js
+console.log(union([2], [1, 2])); // [2, 1]
+```

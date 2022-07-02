@@ -30,6 +30,7 @@ const {
 	tail,
 	take,
 	takeRight,
+	union,
 } = require('./addash');
 
 /* * chunk */
@@ -194,7 +195,10 @@ console.log(take([1, 2, 3], 5));
 console.log(take([1, 2, 3], 0)); */
 
 /* * takeRight */
-console.log(takeRight([1, 2, 3]));
-console.log(takeRight([1, 2, 3], 2));
-console.log(takeRight([1, 2, 3], 5));
-console.log(takeRight([1, 2, 3], 0));
+// console.log(takeRight([1, 2, 3]));
+// console.log(takeRight([1, 2, 3], 2));
+// console.log(takeRight([1, 2, 3], 5));
+// console.log(takeRight([1, 2, 3], 0));
+
+// * union
+console.log(union([2], [1, 2]));
