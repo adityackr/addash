@@ -1,8 +1,46 @@
-# Addash
+# Table of Contents
+
+- [Table of Contents](#table-of-contents)
+	- [Addash](#addash)
+		- [chunk(arr, size)](#chunkarr-size)
+		- [compact(arr)](#compactarr)
+		- [concat(arr, ...values)](#concatarr-values)
+		- [difference(arr, [values])](#differencearr-values)
+		- [drop(arr, n=1)](#droparr-n1)
+		- [dropRight(arr, n=1)](#droprightarr-n1)
+		- [fill(arr, value, start=0, end=arr.length)](#fillarr-value-start0-endarrlength)
+		- [flatten(arr)](#flattenarr)
+		- [flattenDeep(arr)](#flattendeeparr)
+		- [flattenDepth(arr, depth=1)](#flattendeptharr-depth1)
+		- [fromPairs(pairs)](#frompairspairs)
+		- [head(arr)](#headarr)
+		- [indexOf(arr, value, fromIndex=0)](#indexofarr-value-fromindex0)
+		- [initial(arr)](#initialarr)
+		- [join(arr, separator=', ')](#joinarr-separator-)
+		- [last(arr)](#lastarr)
+		- [lastIndexOf(arr, value, fromIndex=arr.length-1)](#lastindexofarr-value-fromindexarrlength-1)
+		- [nth(arr, n=0)](#ntharr-n0)
+		- [pull(arr, ...values)](#pullarr-values)
+		- [pullAll(arr, values](#pullallarr-values)
+		- [pullAt(arr, indexes)](#pullatarr-indexes)
+		- [reverse(arr)](#reversearr)
+		- [slice(arr, start=0, end=arr.length)](#slicearr-start0-endarrlength)
+		- [sortedIndex(arr, value)](#sortedindexarr-value)
+		- [sortedIndexOf(arr, value)](#sortedindexofarr-value)
+		- [sortedLastIndex(arr, value)](#sortedlastindexarr-value)
+		- [sortedLastIndexOf(arr, value)](#sortedlastindexofarr-value)
+		- [sortedUniq(arr)](#sorteduniqarr)
+		- [tail(arr)](#tailarr)
+		- [take(arr, n=1)](#takearr-n1)
+		- [takeRight(arr, n=1)](#takerightarr-n1)
+		- [union(...arrays)](#unionarrays)
+
+## Addash
 
 addash is a library like lodash. I am creating the library on my way. Anyone can use this library. I will try to create all the features as lodash does. Brief description of all features are given below:
 
-=> **chunk(arr, size)**  
+### chunk(arr, size)
+
 Split an array into groups the length of size. Remaining elements are stored in a new array.
 
 - arguments: arr(Array), size(number)
@@ -18,7 +56,8 @@ chunk(['a', 'b', 'c', 'd'], -5); // []
 chunk([], 3); // []
 ```
 
-=> **compact(arr)**  
+### compact(arr)
+
 Filter an array with only truthy values.
 
 - arguments: arr(Array)
@@ -31,7 +70,8 @@ compact([0, 1, false, 2, '', 3]); // [1, 2, 3]
 compact([0, 1, true, 'text', null, undefined, NaN, false, 2, '', 3]); // [1, true, 'text', 2, 3]
 ```
 
-=> **concat(arr, ...values)**  
+### concat(arr, ...values)
+
 Creates an array by concatenating with more arrays or values.
 
 - arguments: arr(Array), ...values(Array)
@@ -45,7 +85,8 @@ concat(1, 2, [3], [[4]]); // []
 concat(); // []
 ```
 
-=> **difference(arr, [values])**  
+### difference(arr, [values])
+
 Creates an array by concatenating with more arrays or values.
 
 - arguments: arr(Array), [values (Array)]
@@ -57,7 +98,8 @@ Example:
 difference([2, 1], [2, 3]); // [1]
 ```
 
-=> **drop(arr, n=1)**  
+### drop(arr, n=1)
+
 Creates a slice of array with n elements dropped from the beginning.
 
 - arguments: arr(Array), n=1(number)
@@ -72,7 +114,8 @@ drop([1, 2, 3], 5); // []
 drop([1, 2, 3], 0); // [1, 2, 3]
 ```
 
-=> **dropRight(arr, n=1)**  
+### dropRight(arr, n=1)
+
 Creates a slice of array with n elements dropped from the end.
 
 - arguments: arr(Array, n=1)
@@ -87,7 +130,8 @@ dropRight([1, 2, 3], 5); // []
 dropRight([1, 2, 3], 0); // [1, 2, 3]
 ```
 
-=> **fill(arr, value, start=0, end=arr.length)**  
+### fill(arr, value, start=0, end=arr.length)
+
 Fills elements of array with value from start up to, but not including end.
 
 - arguments: arr(Array), value(any), start=0(number), end=arr.length(number)
@@ -102,7 +146,8 @@ fill(Array(3), 2); // [2, 2, 2]
 fill([4, 6, 8, 10], '*', 1, 3); // [4, '*', '*', 10]
 ```
 
-=> **flatten(arr)**  
+### flatten(arr)
+
 Flattens array a single level deep.
 
 - arguments: arr(Array)
@@ -114,7 +159,8 @@ Example:
 flatten([1, [2, [3, [4]], 5]]); // [1, 2, [3, [4]], 5]
 ```
 
-=> **flattenDeep(arr)**  
+### flattenDeep(arr)
+
 Recursively flattens array.
 
 - arguments: arr(Array)
@@ -126,7 +172,8 @@ Example:
 flattenDeep([1, [2, [3, [4]], 5]]); // [1, 2, 3, 4, 5]
 ```
 
-=> **flattenDepth(arr, depth=1)**  
+### flattenDepth(arr, depth=1)
+
 Recursively flatten array up to depth times.
 
 - arguments: arr(Array), depth=1(number)
@@ -141,7 +188,8 @@ flattenDepth([1, [2, [3, [4]], 5]], 3); // [ 1, 2, 3, 4, 5 ]
 flattenDepth([1, [2, [3, [4]], 5]], 4); // [ 1, 2, 3, 4, 5 ]
 ```
 
-=> **fromPairs(pairs)**  
+### fromPairs(pairs)
+
 Returns an object composed from key-value pairs.
 
 - arguments: pairs(Array)
@@ -156,7 +204,8 @@ fromPairs([
 ]); // { a: 1, b: 2}
 ```
 
-=> **head(arr)**  
+### head(arr)
+
 returns the first element of the array
 
 - arguments: arr(Array)
@@ -170,7 +219,8 @@ head(['a', 'b', 'c']); // ['a']
 head([]); // undefined
 ```
 
-=> **indexOf(arr, value, fromIndex=0)**  
+### indexOf(arr, value, fromIndex=0)
+
 returns the index number of the value
 
 - arguments: arr(Array), value(any), fromIndex=0(number)
@@ -185,7 +235,8 @@ indexOf([1, 2, 1, 2], 2, -1); // 3
 indexOf([1, 2, 1, 2], 3); // -1
 ```
 
-=> **initial(arr)**  
+### initial(arr)
+
 get all but the last element of the array
 
 - arguments: arr(Array)
@@ -197,7 +248,8 @@ Example:
 initial([1, 2, 3]); // [1, 2]
 ```
 
-=> **join(arr, separator=', ')**  
+### join(arr, separator=', ')
+
 Converts all elements in array into a string separated by `separator`.
 
 - arguments: arr(Array), separator=', '(string)
@@ -210,7 +262,8 @@ join(['a', 'b', 'c']); // a, b, c
 join(['a', 'b', 'c'], '~'); // a~b~c
 ```
 
-=> **last(arr)**  
+### last(arr)
+
 Returns the last element of the array.
 
 - arguments: arr(Array)
@@ -222,7 +275,8 @@ Example:
 last([1, 2, 3]); // 3
 ```
 
-=> **lastIndexOf(arr, value, fromIndex=arr.length-1)**  
+### lastIndexOf(arr, value, fromIndex=arr.length-1)
+
 This method is like `indexOf` except that it iterates over elements of array from right to left.
 
 - arguments: arr(Array), value(any), fromIndex=arr.length-1(number)
@@ -236,7 +290,8 @@ lastIndexOf([1, 2, 1, 2], 2, 2); // 1
 lastIndexOf([1, 2, 1, 2], 3); // -1
 ```
 
-=> **nth(arr, n=0)**  
+### nth(arr, n=0)
+
 Gets the element at index n of array. If n is negative, the nth element from the end is returned.
 
 - arguments: arr(Array), n=0(number)
@@ -249,7 +304,8 @@ nth(['a', 'b', 'c', 'd'], 1); // b
 nth(['a', 'b', 'c', 'd'], -2); // c
 ```
 
-=> **pull(arr, ...values)**  
+### pull(arr, ...values)
+
 Removes all given values from array
 
 - arguments: arr(Array), ...values(any)
@@ -262,7 +318,8 @@ const array = ['a', 'b', 'c', 'a', 'b', 'c'];
 console.log(pull(array, 'a', 'c')); // [b, b]
 ```
 
-=> **pullAll(arr, values)**  
+### pullAll(arr, values
+
 This method is like pull except that it accepts an array of values to remove.
 
 - arguments: arr(Array), values(Array)
@@ -275,7 +332,8 @@ const array = ['a', 'b', 'c', 'a', 'b', 'c'];
 console.log(pull(array, ['a', 'c'])); // [b, b]
 ```
 
-=> **pullAt(arr, indexes)**  
+### pullAt(arr, indexes)
+
 Removes elements from array corresponding to indexes and returns an array of removed elements.
 
 **N.B.:**
@@ -292,7 +350,8 @@ console.log(pullAt(array, [1, 3])); // [b, d]
 console.log(array); // [a, c]
 ```
 
-=> **reverse(arr)**  
+### reverse(arr)
+
 Reverses array so that the first element becomes the last, the second element becomes the second to last, and so on.
 
 **N.B.:**
@@ -312,7 +371,8 @@ console.log(array1); // [3, 2, 1]
 console.log(array2); // [c, b, a]
 ```
 
-=> **slice(arr, start=0, end=arr.length)**  
+### slice(arr, start=0, end=arr.length)
+
 Creates a slice of `array` from `start` up to, but not including, `end`.
 
 - arguments: arr(Array), start=0(number), end=arr.length(number)
@@ -326,7 +386,8 @@ console.log(slice([1, 2, 3, 4, 5], 2)); // [3, 4, 5]
 console.log(slice([1, 2, 3, 4, 5], 2, 4)); // [3, 4]
 ```
 
-=> **sortedIndex(arr, value)**  
+### sortedIndex(arr, value)
+
 determine the lowest index at which value should be inserted into `array` in order to maintain its sort order.
 
 - arguments: arr(Array), value(any)
@@ -343,7 +404,8 @@ console.log(sortedIndex(['a', 'c'], 'b')); // 1
 console.log(sortedIndex(['a', 'c'], 'd')); // 2
 ```
 
-=> **sortedIndexOf(arr, value)**  
+### sortedIndexOf(arr, value)
+
 Returns the index of the matched value, else -1.
 
 - arguments: arr(Array), value(any)
@@ -358,7 +420,8 @@ console.log(sortedIndexOf([4, 5, 5, 5, 6], 6)); // 4
 console.log(sortedIndexOf([4, 5, 5, 5, 6], 7)); // -1
 ```
 
-=> **sortedLastIndex(arr, value)**  
+### sortedLastIndex(arr, value)
+
 This method is like `sortedIndex` except that it returns the highest index at which value should be inserted into array in order to maintain its sort order.
 
 - arguments: arr(Array), value(any)
@@ -374,7 +437,8 @@ console.log(sortedLastIndex([4, 5, 5, 5, 6], 6)); // 5
 console.log(sortedLastIndex([4, 5, 5, 5, 6], 7)); // 5
 ```
 
-=> **sortedLastIndexOf(arr, value)**  
+### sortedLastIndexOf(arr, value)
+
 Returns the last index of the matched value, else -1.
 
 - arguments: arr(Array), value(any)
@@ -386,7 +450,8 @@ Example:
 console.log(sortedLastIndexOf([4, 5, 5, 5, 6], 5)); // 3
 ```
 
-=> **sortedUniq(arr)**  
+### sortedUniq(arr)
+
 Returns the new duplicate free array.
 
 - arguments: arr(Array)
@@ -398,7 +463,8 @@ Example:
 console.log(sortedUniq([1, 1, 2])); // [1, 2]
 ```
 
-=> **tail(arr)**  
+### tail(arr)
+
 Get all elements except first
 
 - arguments: arr(Array)
@@ -410,7 +476,8 @@ Example:
 console.log(tail([1, 2, 3])); // [2, 3]
 ```
 
-=> **take(arr, n=1)**  
+### take(arr, n=1)
+
 Creates a slice of array with n elements taken from the beginning.
 
 - arguments: arr(Array), n=1(Number)
@@ -425,7 +492,8 @@ console.log(take([1, 2, 3], 5)); // [1, 2, 3]
 console.log(take([1, 2, 3], 0)); // []
 ```
 
-=> **take(arr, n=1)**  
+### takeRight(arr, n=1)
+
 Creates a slice of array with n elements taken from the end.
 
 - arguments: arr(Array), n=1(Number)
@@ -440,7 +508,8 @@ console.log(takeRight([1, 2, 3], 5)); // [1, 2, 3]
 console.log(takeRight([1, 2, 3], 0)); // []
 ```
 
-=> **union(...arrays)**
+### union(...arrays)
+
 Creates an array of unique values.
 
 - arguments: ...arrays(Array)
