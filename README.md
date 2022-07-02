@@ -34,6 +34,7 @@
 		- [take(arr, n=1)](#takearr-n1)
 		- [takeRight(arr, n=1)](#takerightarr-n1)
 		- [union(...arrays)](#unionarrays)
+		- [uniq(array)](#uniqarray)
 
 ## Addash
 
@@ -519,4 +520,17 @@ Example:
 
 ```js
 console.log(union([2], [1, 2])); // [2, 1]
+```
+
+### uniq(array)
+
+Creates a duplicate-free version of an array
+
+- arguments: array (Array)
+- returns: (Array) Returns the new duplicate free array
+
+Example:
+
+```js
+console.log(uniq([2, 1, 2, 3, 3, 3])); // [2, 1, 3]
 ```

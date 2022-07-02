@@ -31,6 +31,7 @@ const {
 	take,
 	takeRight,
 	union,
+	uniq,
 } = require('./addash');
 
 /* * chunk */
@@ -201,4 +202,7 @@ console.log(take([1, 2, 3], 0)); */
 // console.log(takeRight([1, 2, 3], 0));
 
 // * union
-console.log(union([2], [1, 2]));
+// console.log(union([2], [1, 2]));
+
+// * uniq
+console.log(uniq([2, 1, 2, 3, 3, 3]));
