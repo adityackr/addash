@@ -17,6 +17,4 @@ function zip(...array) {
 	return this.newArr;
 }
 
-console.log(zip(['a', 'b'], [1, 2], [true, false]));
-
 module.exports = zip;
