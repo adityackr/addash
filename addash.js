@@ -522,11 +522,11 @@ function uniq(array) {
 
 /**
  *
- * @param {Array} array Array of arrays
+ * @param {Array} array arrays
  * @returns {Array} returns new array of regrouped elements
  */
 
-function unzip(array) {
+function unzip(...array) {
 	this.newArr = [];
 	for (let i = 0; i < array[0].length; i++) {
 		if (!Array.isArray(this.newArr[i])) {

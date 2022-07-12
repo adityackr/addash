@@ -1,10 +1,10 @@
 /**
  *
  * @param {Array} array arrays
- * @returns {Array} returns new array of regrouped elements
+ * @returns {Array} returns the new array of grouped elements
  */
 
-function unzip(...array) {
+function zip(...array) {
 	this.newArr = [];
 	for (let i = 0; i < array[0].length; i++) {
 		if (!Array.isArray(this.newArr[i])) {
@@ -17,4 +17,6 @@ function unzip(...array) {
 	return this.newArr;
 }
 
-module.exports = unzip;
+console.log(zip(['a', 'b'], [1, 2], [true, false]));
+
+module.exports = zip;

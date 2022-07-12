@@ -209,9 +209,4 @@ console.log(take([1, 2, 3], 0)); */
 // console.log(uniq([2, 1, 2, 3, 3, 3]));
 
 // * unzip
-console.log(
-	unzip([
-		['a', 1, true],
-		['b', 2, false],
-	])
-);
+console.log(unzip(['a', 1, true], ['b', 2, false]));
