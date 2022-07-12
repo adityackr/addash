@@ -35,6 +35,7 @@
 		- [takeRight(arr, n=1)](#takerightarr-n1)
 		- [union(...arrays)](#unionarrays)
 		- [uniq(array)](#uniqarray)
+		- [unzip(array)](#unziparray)
 
 ## Addash
 
@@ -533,4 +534,20 @@ Example:
 
 ```js
 console.log(uniq([2, 1, 2, 3, 3, 3])); // [2, 1, 3]
+```
+
+### unzip(array)
+
+It accepts an array of grouped elements and creates an array regrouping the elements to their pre-zip configuration.
+
+- arguments: array (Array)
+- returns: (Array) Returns the regrouped elements
+
+```js
+console.log(
+	unzip([
+		['a', 1, true],
+		['b', 2, false],
+	])
+);
 ```

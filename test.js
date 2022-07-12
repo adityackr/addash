@@ -32,6 +32,7 @@ const {
 	takeRight,
 	union,
 	uniq,
+	unzip,
 } = require('./addash');
 
 /* * chunk */
@@ -205,4 +206,12 @@ console.log(take([1, 2, 3], 0)); */
 // console.log(union([2], [1, 2]));
 
 // * uniq
-console.log(uniq([2, 1, 2, 3, 3, 3]));
+// console.log(uniq([2, 1, 2, 3, 3, 3]));
+
+// * unzip
+console.log(
+	unzip([
+		['a', 1, true],
+		['b', 2, false],
+	])
+);
