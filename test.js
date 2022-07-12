@@ -34,6 +34,7 @@ const {
 	uniq,
 	unzip,
 	zip,
+	without,
 } = require('./addash');
 
 /* * chunk */
@@ -213,4 +214,7 @@ console.log(take([1, 2, 3], 0)); */
 // console.log(unzip(['a', 1, true], ['b', 2, false]));
 
 // * zip
-console.log(zip(['a', 'b'], [1, 2], [true, false]));
+// console.log(zip(['a', 'b'], [1, 2], [true, false]));
+
+// * without
+console.log(without([2, 1, 2, 3], 1, 2));

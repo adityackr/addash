@@ -36,6 +36,7 @@
 		- [union(...arrays)](#unionarrays)
 		- [uniq(array)](#uniqarray)
 		- [unzip(...array)](#unziparray)
+		- [without(array, ...values)](#withoutarray-values)
 		- [zip(...array)](#ziparray)
 
 ## Addash
@@ -546,6 +547,17 @@ It accepts an array of grouped elements and creates an array regrouping the elem
 
 ```js
 console.log(unzip(['a', 1, true], ['b', 2, false]));
+```
+
+### without(array, ...values)
+
+Creates an array excluding all given values.
+
+- arguments: array (Array), (...values) (any)
+- returns: Returns the new array of filtered values.
+
+```js
+console.log(without([2, 1, 2, 3], 1, 2));
 ```
 
 ### zip(...array)
