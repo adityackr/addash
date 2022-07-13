@@ -42,6 +42,7 @@
 		- [zip(...array)](#ziparray)
 	- [Lang](#lang)
 		- [castArray(value)](#castarrayvalue)
+		- [clone(value)](#clonevalue)
 
 ## Addash
 
@@ -617,4 +618,19 @@ console.log(castArray()); // []
 
 const arr = [1, 2, 3];
 console.log(castArray(arr) === arr); // true
+```
+
+### clone(value)
+
+Creates a shallow clone of value.
+
+- arguments: value(any)
+- returns: (any) Returns the cloned value.
+
+Example
+
+```js
+const objects = [{ a: 1 }, { b: 2 }];
+const shallow = clone(objects);
+console.log(shallow[0] === objects[0]); // true
 ```

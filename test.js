@@ -37,6 +37,7 @@ const {
 	without,
 	xor,
 	castArray,
+	clone,
 } = require('./addash');
 
 /* * chunk */
@@ -225,12 +226,17 @@ console.log(take([1, 2, 3], 0)); */
 // console.log(zip(['a', 'b'], [1, 2], [true, false]));
 
 // * castArray
-console.log(castArray(1));
-console.log(castArray({ a: 1 }));
-console.log(castArray('abc'));
-console.log(castArray(null));
-console.log(castArray(undefined));
-console.log(castArray());
+// console.log(castArray(1));
+// console.log(castArray({ a: 1 }));
+// console.log(castArray('abc'));
+// console.log(castArray(null));
+// console.log(castArray(undefined));
+// console.log(castArray());
 
-const arr = [1, 2, 3];
-console.log(castArray(arr) === arr);
+// const arr = [1, 2, 3];
+// console.log(castArray(arr) === arr);
+
+// * clone
+const objects = [{ a: 1 }, { b: 2 }];
+const shallow = clone(objects);
+console.log(shallow[0] === objects[0]);
