@@ -37,6 +37,7 @@
 		- [uniq(array)](#uniqarray)
 		- [unzip(...array)](#unziparray)
 		- [without(array, ...values)](#withoutarray-values)
+		- [xor(...array)](#xorarray)
 		- [zip(...array)](#ziparray)
 
 ## Addash
@@ -545,6 +546,8 @@ It accepts an array of grouped elements and creates an array regrouping the elem
 - arguments: array (Array)
 - returns: (Array) Returns the regrouped elements
 
+Example:
+
 ```js
 console.log(unzip(['a', 1, true], ['b', 2, false]));
 ```
@@ -556,8 +559,23 @@ Creates an array excluding all given values.
 - arguments: array (Array), (...values) (any)
 - returns: Returns the new array of filtered values.
 
+Example:
+
 ```js
 console.log(without([2, 1, 2, 3], 1, 2));
+```
+
+### xor(...array)
+
+Creates an array of unique values that is the symmetric difference of the given arrays. The order of result values is determined by the order they occur in the arrays.
+
+- arguments: ...array(Array)
+- returns: Returns the new array of filtered values.
+
+Example:
+
+```js
+console.log(xor([2, 1], [2, 3], [2, 5]));
 ```
 
 ### zip(...array)
@@ -566,6 +584,8 @@ Creates an array of grouped elements, the first of which contains the first elem
 
 - arguments: array (Array)
 - returns: (Array) Returns the new array of grouped elements.
+
+Example:
 
 ```js
 console.log(zip(['a', 'b'], [1, 2], [true, false]));

@@ -35,6 +35,7 @@ const {
 	unzip,
 	zip,
 	without,
+	xor,
 } = require('./addash');
 
 /* * chunk */
@@ -213,8 +214,11 @@ console.log(take([1, 2, 3], 0)); */
 // * unzip
 // console.log(unzip(['a', 1, true], ['b', 2, false]));
 
+// * without
+// console.log(without([2, 1, 2, 3], 1, 2));
+
+// * xor
+console.log(xor([2, 1], [2, 3], [2, 5]));
+
 // * zip
 // console.log(zip(['a', 'b'], [1, 2], [true, false]));
-
-// * without
-console.log(without([2, 1, 2, 3], 1, 2));
