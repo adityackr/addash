@@ -36,6 +36,7 @@ const {
 	zip,
 	without,
 	xor,
+	castArray,
 } = require('./addash');
 
 /* * chunk */
@@ -218,7 +219,18 @@ console.log(take([1, 2, 3], 0)); */
 // console.log(without([2, 1, 2, 3], 1, 2));
 
 // * xor
-console.log(xor([2, 1], [2, 3], [2, 5]));
+// console.log(xor([2, 1], [2, 3], [2, 5]));
 
 // * zip
 // console.log(zip(['a', 'b'], [1, 2], [true, false]));
+
+// * castArray
+console.log(castArray(1));
+console.log(castArray({ a: 1 }));
+console.log(castArray('abc'));
+console.log(castArray(null));
+console.log(castArray(undefined));
+console.log(castArray());
+
+const arr = [1, 2, 3];
+console.log(castArray(arr) === arr);

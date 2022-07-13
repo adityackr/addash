@@ -2,6 +2,7 @@
 
 - [Table of Contents](#table-of-contents)
 	- [Addash](#addash)
+	- [Array](#array)
 		- [chunk(arr, size)](#chunkarr-size)
 		- [compact(arr)](#compactarr)
 		- [concat(arr, ...values)](#concatarr-values)
@@ -39,10 +40,14 @@
 		- [without(array, ...values)](#withoutarray-values)
 		- [xor(...array)](#xorarray)
 		- [zip(...array)](#ziparray)
+	- [Lang](#lang)
+		- [castArray(value)](#castarrayvalue)
 
 ## Addash
 
 addash is a library like lodash. I am creating the library on my way. Anyone can use this library. I will try to create all the features as lodash does. Brief description of all features are given below:
+
+## Array
 
 ### chunk(arr, size)
 
@@ -589,4 +594,27 @@ Example:
 
 ```js
 console.log(zip(['a', 'b'], [1, 2], [true, false]));
+```
+
+## Lang
+
+### castArray(value)
+
+Casts value as an array if it's not one.
+
+- arguments: value(any)
+- returns: (Array) Returns the cast array
+
+Example:
+
+```js
+console.log(castArray(1)); // [1]
+console.log(castArray({ a: 1 })); // [{ a: 1 }]
+console.log(castArray('abc')); // ['abc']
+console.log(castArray(null)); // [null]
+console.log(castArray(undefined)); // [undefined]
+console.log(castArray()); // []
+
+const arr = [1, 2, 3];
+console.log(castArray(arr) === arr); // true
 ```
