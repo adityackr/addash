@@ -38,6 +38,7 @@ const {
 	xor,
 	castArray,
 	clone,
+	cloneDeep,
 } = require('./addash');
 
 /* * chunk */
@@ -237,6 +238,11 @@ console.log(take([1, 2, 3], 0)); */
 // console.log(castArray(arr) === arr);
 
 // * clone
+// const objects = [{ a: 1 }, { b: 2 }];
+// const shallow = clone(objects);
+// console.log(shallow[0] === objects[0]);
+
+// * cloneDeep
 const objects = [{ a: 1 }, { b: 2 }];
-const shallow = clone(objects);
-console.log(shallow[0] === objects[0]);
+const deep = cloneDeep(objects);
+console.log(deep[0] === objects[0]);

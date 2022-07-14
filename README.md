@@ -43,6 +43,7 @@
 	- [Lang](#lang)
 		- [castArray(value)](#castarrayvalue)
 		- [clone(value)](#clonevalue)
+		- [cloneDeep(value)](#clonedeepvalue)
 
 ## Addash
 
@@ -633,4 +634,19 @@ Example
 const objects = [{ a: 1 }, { b: 2 }];
 const shallow = clone(objects);
 console.log(shallow[0] === objects[0]); // true
+```
+
+### cloneDeep(value)
+
+Creates a Deep clone of value.
+
+- arguments: value(any)
+- returns: (any) Returns the deep cloned value.
+
+Example
+
+```js
+const objects = [{ a: 1 }, { b: 2 }];
+const shallow = clone(objects);
+console.log(shallow[0] === objects[0]); // false
 ```
