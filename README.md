@@ -45,6 +45,7 @@
 		- [clone(value)](#clonevalue)
 		- [cloneDeep(value)](#clonedeepvalue)
 		- [eq(value, other)](#eqvalue-other)
+		- [gt(value, other)](#gtvalue-other)
 
 ## Addash
 
@@ -672,4 +673,19 @@ console.log(eq('a', Object('a'))); // false
 console.log(eq(NaN, NaN)); // false
 console.log(eq(undefined, undefined)); // true
 console.log(eq([1], [1])); // false
+```
+
+### gt(value, other)
+
+Checks if value is greater than other
+
+- arguments: value(\*), others(\*)
+- returns: (boolean) Returns true if value is greater than other, else false.
+
+Example
+
+```js
+console.log(gt(3, 1)); // true
+console.log(gt(3, 3)); // false
+console.log(gt(1, 3)); // false
 ```

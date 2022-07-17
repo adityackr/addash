@@ -645,7 +645,16 @@ function eq(value, other) {
 	return value === other;
 }
 
-module.exports = eq;
+/**
+ * Checks if value is greater than other
+ * @param {*} value
+ * @param {*} other
+ * @returns {boolean}
+ */
+
+function gt(value, other) {
+	return value > other;
+}
 
 module.exports = {
 	chunk,
@@ -689,4 +698,5 @@ module.exports = {
 	clone,
 	cloneDeep,
 	eq,
+	gt,
 };
