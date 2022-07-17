@@ -39,6 +39,7 @@ const {
 	castArray,
 	clone,
 	cloneDeep,
+	eq,
 } = require('./addash');
 
 /* * chunk */
@@ -243,6 +244,18 @@ console.log(take([1, 2, 3], 0)); */
 // console.log(shallow[0] === objects[0]);
 
 // * cloneDeep
-const objects = [{ a: 1 }, { b: 2 }];
-const deep = cloneDeep(objects);
-console.log(deep[0] === objects[0]);
+// const objects = [{ a: 1 }, { b: 2 }];
+// const deep = cloneDeep(objects);
+// console.log(deep[0] === objects[0]);
+
+// * eq
+const object = { a: 1 };
+const other = { a: 1 };
+
+console.log(eq(object, object));
+console.log(eq(object, other));
+console.log(eq('a', 'a'));
+console.log(eq('a', Object('a')));
+console.log(eq(NaN, NaN));
+console.log(eq(undefined, undefined));
+console.log(eq([1], [1]));

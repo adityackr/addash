@@ -44,6 +44,7 @@
 		- [castArray(value)](#castarrayvalue)
 		- [clone(value)](#clonevalue)
 		- [cloneDeep(value)](#clonedeepvalue)
+		- [eq(value, other)](#eqvalue-other)
 
 ## Addash
 
@@ -649,4 +650,26 @@ Example
 const objects = [{ a: 1 }, { b: 2 }];
 const shallow = clone(objects);
 console.log(shallow[0] === objects[0]); // false
+```
+
+### eq(value, other)
+
+Comparison between two values to determine if they are equivalent.
+
+- arguments: value(\*), others(\*)
+- returns: (boolean) Returns true if the values are equivalent, else false.
+
+Example
+
+```js
+const object = { a: 1 };
+const other = { a: 1 };
+
+console.log(eq(object, object)); // true
+console.log(eq(object, other)); // false
+console.log(eq('a', 'a')); // true
+console.log(eq('a', Object('a'))); // false
+console.log(eq(NaN, NaN)); // false
+console.log(eq(undefined, undefined)); // true
+console.log(eq([1], [1])); // false
 ```
