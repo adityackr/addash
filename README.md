@@ -46,6 +46,7 @@
 		- [cloneDeep(value)](#clonedeepvalue)
 		- [eq(value, other)](#eqvalue-other)
 		- [gt(value, other)](#gtvalue-other)
+		- [gte(value, other)](#gtevalue-other)
 
 ## Addash
 
@@ -687,5 +688,20 @@ Example
 ```js
 console.log(gt(3, 1)); // true
 console.log(gt(3, 3)); // false
+console.log(gt(1, 3)); // false
+```
+
+### gte(value, other)
+
+Checks if value is equal or greater than other
+
+- arguments: value(\*), others(\*)
+- returns: (boolean) Returns true if value is equal or greater than other, else false.
+
+Example
+
+```js
+console.log(gt(3, 1)); // true
+console.log(gt(3, 3)); // true
 console.log(gt(1, 3)); // false
 ```

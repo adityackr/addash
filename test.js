@@ -41,6 +41,7 @@ const {
 	cloneDeep,
 	eq,
 	gt,
+	gte,
 } = require('./addash');
 
 /* * chunk */
@@ -262,6 +263,11 @@ console.log(take([1, 2, 3], 0)); */
 // console.log(eq([1], [1]));
 
 // * gt
-console.log(gt(3, 1));
-console.log(gt(3, 3));
-console.log(gt(1, 3));
+// console.log(gt(3, 1));
+// console.log(gt(3, 3));
+// console.log(gt(1, 3));
+
+// * gte
+console.log(gte(3, 1));
+console.log(gte(3, 3));
+console.log(gte(1, 3));
